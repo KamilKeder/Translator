@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Translator</title>
+				<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+						<link rel="stylesheet" type="text/css" href="style.css">
+						<link rel="apple-touch-icon" sizes="76x76" href="../../png/translator.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../../png/translator.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../../png/translator.png">
+<link rel="manifest" href="../../png/translator.png">
+<link rel="mask-icon" href="../../png/translator.png" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+</head>
+<body>
+<div id="container_app" class="card">
+	<div class="card-header">
+	<p class="mb-0">Translator</p>
+	</div>
+<div class="card-body pt-0">
+			<p class="mb-2 mt-2">Wybierz jezyk</p>
+		<select type="text" id="input_jezyk1" class="mb-2 mt-2 col-6" style="text-align: center;">
+			<option value="en">Angielski</option>
+  			<option value="es">Hiszpanski</option>
+  			<option value="pt">Portugalski</option>
+  			<option value="it">Włoski</option>
+  			<option value="fr">Francuski</option>
+  			<option value="pl">Polski</option>
+		</select>
+	<p class="mb-2 mt-2">Wpisz co chcesz przetłumaczyć</p>
+		<textarea type="text" id="input_tekst" class="mb-2 mt-2"></textarea>
+		<p class="mb-2 mt-2">Wybierz jezyk</p>
+		<select type="text" id="input_jezyk" class="mb-2 mt-2 col-6" style="text-align: center;">
+			<option value="en">Angielski</option>
+  			<option value="es">Hiszpanski</option>
+  			<option value="pt">Portugalski</option>
+  			<option value="it">Włoski</option>
+  			<option value="fr">Francuski</option>
+  			<option value="pl">Polski</option>
+		</select>
+	<button id="button_tlumacz" class="btn btn-success mt-2 mb-2 col-6">Tłumacz</button>
+	<div id="div_przetlumaczone" class="ukryty">
+	<p>Przetłumaczona wiadomość</p>
+	<textarea type="text" id="input_przetlumaczone"></textarea>
+	</div>
+</div>
+	<div class="card-footer">
+		<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#info">Informacje o aplikacji</button>
+	</div>	
+
+</div>
+
+<div class="modal fade" id="info" tabindex="-1" aria-labelledby="infoinfo" aria-hidden="true">
+	<div class="modal-dialog">
+	  <div class="modal-content">
+		<div class="modal-header">
+		  <h1 class="modal-title fs-5" id="infoinfo">Informacje o aplikacji</h1>
+		  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+		</div>
+		<div class="modal-body">
+		  <h5 class="mb-2">O aplikacji</h5>
+			Aplikacja umożliwia tłumaczenie wpisanej wiadomości z jednego wybranego przez użytkownika języka na inny, również wybrany przez użytkownika, korzystając z zaawansowanej technologii API od Google.
+			<h5 class="mt-2">Technologie</h5>
+			HTML, CSS, JavaScript, API, Bootstrap
+		</div>
+		<div class="modal-footer">
+		  <button type="button" class="btn btn-success" data-bs-dismiss="modal">Zamknij</button>
+		</div>
+	  </div>
+	</div>
+  </div>
+
+
+
+<script type="text/javascript" src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+body{
+  background: linear-gradient(
+    to left,
+    #3c4043 0%,
+    #3c4043 50%,
+    #ffc107 50%,
+    #ffc107 100%
+  );
+}
+.card{
+	margin: auto;
+	margin-top: 10%;
+	width: 300px;
+	text-align: center;
+}
+.ukryty{
+	display: none;
+}
+textarea{
+	font-size: 12px;
+	width: 80%;
+	height: 80px;
+}
